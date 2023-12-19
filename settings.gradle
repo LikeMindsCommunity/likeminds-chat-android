@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "likeminds-chat-android"
 include ':example'
 include ':likeminds-chat-android-ui'
+include ':likeminds-chat-android-integration'

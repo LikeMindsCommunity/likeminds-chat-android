@@ -17,6 +17,33 @@ dependencies {
     implementation chat_deps.ui.shimmer
     implementation chat_deps.ui.audiowave
 
+    //firebase
+    implementation platform(chat_deps.firebase.bom)
+    implementation chat_deps.firebase.messaging
+
+    //rx
+    implementation chat_deps.rxJava.main
+    implementation chat_deps.rxJava.android
+    
+    //keyboard related
+    implementation chat_deps.keyboardutils.eventutil
+    implementation chat_deps.keyboardutils.emoticonkeyboard
+
+    //media
+    implementation chat_deps.media.exoplayer
+    implementation chat_deps.media.imageCompressor
+    implementation chat_deps.media.youtubePlayer
+
+    //aws
+    implementation chat_deps.aws_s3.main
+    implementation(chat_deps.aws_s3.client) { transitive = true }
+
+    //workmanager
+    implementation chat_deps.work_manager.main
+
+    //Giphy
+    implementation chat_deps.giphy.main
+    
     //testing
     testImplementation chat_deps.testing.junit
     androidTestImplementation chat_deps.testing.android_junit

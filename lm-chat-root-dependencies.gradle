@@ -81,7 +81,7 @@ fragment_ktx.main = "androidx.fragment:fragment-ktx:$chat_versions.fragment_ktx"
 chat_deps.fragment_ktx = fragment_ktx
 
 def firebase = [:]
-firebase.bom = "com.google.firebase:firebase-bom:$chat_versions.firebase"
+firebase.bom = "com.google.firebase:firebase-bom:$chat_versions.firebaseBOM"
 firebase.messaging = "com.google.firebase:firebase-messaging-ktx"
 chat_deps.firebase = firebase
 
@@ -117,6 +117,7 @@ chat_deps.giphy = giphy
 def media = [:]
 media.exoplayer = "com.google.android.exoplayer:exoplayer:$chat_versions.exo_player"
 media.imageCompressor = "id.zelory:compressor:$chat_versions.image_compressor"
+media.youtubePlayer = "com.pierfrancescosoffritti.androidyoutubeplayer:core:$chat_versions.youtube_player"
 chat_deps.media = media
 
 ext.chat_deps = chat_deps

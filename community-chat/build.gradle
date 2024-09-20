@@ -33,12 +33,11 @@ android {
 }
 
 dependencies {
-
-    implementation 'androidx.core:core-ktx:1.12.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation chat_deps.android_core.core
+    implementation chat_deps.android_core.appcompat
+    implementation chat_deps.ui.material_designs
+    implementation chat_deps.ui.constrainst_layout
+    testImplementation chat_deps.testing.junit
+    androidTestImplementation chat_deps.testing.android_junit
+    androidTestImplementation chat_deps.testing.espresso_core
 }

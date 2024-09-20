@@ -1,0 +1,51 @@
+dependencies {
+    //core
+    implementation chat_deps.android_core.core
+    implementation chat_deps.android_core.appcompat
+    implementation chat_deps.fragment_ktx.main
+
+    //kotlin
+    implementation chat_deps.kotlin.jdk
+    implementation chat_deps.kotlin.reflect
+
+    //ui
+    implementation chat_deps.ui.material_designs
+    implementation chat_deps.ui.constrainst_layout
+    implementation chat_deps.ui.viewpager2
+    implementation chat_deps.ui.flexbox
+    implementation chat_deps.ui.chromtab
+    implementation chat_deps.ui.shimmer
+    implementation chat_deps.ui.audiowave
+
+    //firebase
+    implementation platform(chat_deps.firebase.bom)
+    implementation chat_deps.firebase.messaging
+
+    //rx
+    implementation chat_deps.rxJava.main
+    implementation chat_deps.rxJava.android
+    
+    //keyboard related
+    implementation chat_deps.keyboardutils.eventutil
+    implementation chat_deps.keyboardutils.emoticonkeyboard
+
+    //media
+    implementation chat_deps.media.exoplayer
+    implementation chat_deps.media.imageCompressor
+    implementation chat_deps.media.youtubePlayer
+
+    //aws
+    implementation chat_deps.aws_s3.main
+    implementation(chat_deps.aws_s3.client) { transitive = true }
+
+    //workmanager
+    implementation chat_deps.work_manager.main
+
+    //Giphy
+    implementation chat_deps.giphy.main
+    
+    //testing
+    testImplementation chat_deps.testing.junit
+    androidTestImplementation chat_deps.testing.android_junit
+    androidTestImplementation chat_deps.testing.espresso_core
+}

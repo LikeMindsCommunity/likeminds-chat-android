@@ -1,0 +1,24 @@
+dependencies {
+    //core
+    implementation chat_deps.android_core.core
+    implementation chat_deps.android_core.appcompat
+    implementation chat_deps.fragment_ktx.main
+
+    //kotlin
+    implementation chat_deps.kotlin.jdk
+    implementation chat_deps.kotlin.reflect
+
+    //ui
+    implementation chat_deps.ui.material_designs
+    implementation chat_deps.ui.constrainst_layout
+    implementation chat_deps.ui.viewpager2
+    implementation chat_deps.ui.flexbox
+    implementation chat_deps.ui.chromtab
+    implementation chat_deps.ui.shimmer
+    implementation chat_deps.ui.audiowave
+
+    //testing
+    testImplementation chat_deps.testing.junit
+    androidTestImplementation chat_deps.testing.android_junit
+    androidTestImplementation chat_deps.testing.espresso_core
+}
